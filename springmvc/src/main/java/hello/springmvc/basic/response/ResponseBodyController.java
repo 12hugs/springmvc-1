@@ -17,12 +17,12 @@ import java.io.IOException;
 @Controller
 @ResponseBody
 public class ResponseBodyController {
-
+// ㅁㄴㅇㄹ
     @GetMapping("/response-body-string-v1")
     public void responseBodyV1(HttpServletResponse response) throws IOException {
         response.getWriter().write("ok");
     }
-
+//ㅁㄴㅇㄹ
     @GetMapping("/response-body-string-v2")
     public ResponseEntity<String> responseStringBodyV2() throws IOException {
         return new ResponseEntity<>("ok", HttpStatus.OK);
@@ -43,7 +43,7 @@ public class ResponseBodyController {
 
         return new ResponseEntity<>(helloData, HttpStatus.OK);
     }
-// 코드 리뷰 스타드
+
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     @GetMapping("/response-body-json-v2")
@@ -55,5 +55,5 @@ public class ResponseBodyController {
 
         return helloData;
     }
-    // 코드리뷰 엔드
+
 }
