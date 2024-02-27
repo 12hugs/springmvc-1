@@ -43,7 +43,7 @@ public class ResponseBodyController {
 
         return new ResponseEntity<>(helloData, HttpStatus.OK);
     }
-
+// 코드 리뷰 스타드
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     @GetMapping("/response-body-json-v2")
@@ -55,4 +55,5 @@ public class ResponseBodyController {
 
         return helloData;
     }
+    // 코드리뷰 엔드
 }
